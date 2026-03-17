@@ -2,16 +2,37 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <title>Calculadora de IMC!</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <h1>Calculadora de IMC</h1>
+
+    <form action="/renderer.js" id="imc_form">
+      <label for="fname">Nombre: </label>
+      <input type="text" id="fname" name="fname">
+
+      <label for="fweight"> Peso: </label>
+      <input type="text" id="fweight" name="fweight">
+
+      <label for="fheight">Altura:</label>
+      <input type="text" id="fheight" name="fheight">
+
+      <label for="fsubmit">Envíar</label>
+      <input type="submit" id="fsubmit">  </button>
+
+    </form>
+
+    <table id="table">
+      <tr>
+        <th>Nombre</th>
+        <th>Peso</th>
+        <th>Altura</th>
+        <th>IMC</th>
+      </tr>
+    </table>
+ 
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>

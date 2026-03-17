@@ -1,20 +1,21 @@
 {
-  "name": "minimal-repro",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "calculadora-IMC",
+  "version": "0.0.1",
+  "description": "Calculadora de Índice de Masa Corporal",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": "https://github.com/electron/minimal-repro",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "masa corporal",
+    "índice",
+    "salud",
+    "peso",
+    "masa",
+    "calculadora"
   ],
-  "author": "GitHub",
+  "author": "Diego Arturo Ferrer Pérez",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^40.8.0"
